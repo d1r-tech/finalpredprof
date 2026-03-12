@@ -1,0 +1,10 @@
+.idea/
+*.iml
+__pycache__/
+*.pyc
+venv/
+.env
+*.db
+*.sqlite3
+data_*.csv
+*.csv
