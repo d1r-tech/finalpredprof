@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Наша нейросеть</title>
+</head>
+<body>
+    <h1>Демо нейросети</h1>
+
+    {% if prediction is defined %}
+        <h2>Результат: {{ prediction }}</h2>
+    {% endif %}
+
+    <form method="POST" action="/predict">
+        <label>Признак 1:</label>
+        <input type="number" name="x1" step="0.01" required><br>
+
+        <label>Признак 2:</label>
+        <input type="number" name="x2" step="0.01" required><br>
+
+        <button type="submit">Предсказать</button>
+    </form>
+</body>
+</html>
